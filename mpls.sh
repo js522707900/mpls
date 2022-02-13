@@ -33,7 +33,7 @@ echo -e "
  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/client.key"
  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/ca.crt"
  cd frp_0.39.0_linux_amd64 && rm -rf frpc.ini && wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/frpc.ini"
- nohup ./frpc -c ./frpc.ini >> /dev/null 2>&1 &
+ systemctl restart frpc
  elif [ "$bNum" = "2" ];then
 echo -e "
  ${GREEN} 1.广港1(gzhkmpls1) 
@@ -44,7 +44,7 @@ echo -e "
  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/server.key"
  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/ca.crt"
  cd frp_0.39.0_linux_amd64 && rm -rf frps.ini &&  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/frps.ini"
- nohup ./frps -c ./frps.ini >> /dev/null 2>&1 &
+ systemctl restart frps
  fi
  elif [ "$aNum" = "2" ];then
  cd
