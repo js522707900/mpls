@@ -29,10 +29,10 @@ echo -e "
  "
  read -p "请输入括号里的代号:" mplsdh
  cd
- wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/luodi/client.crt"
- wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/luodi/client.key"
- wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/luodi/ca.crt"
- cd frp_0.39.0_linux_amd64 && rm -rf frpc.ini && wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/luodi/frpc.ini"
+ wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/client.crt"
+ wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/client.key"
+ wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/ca.crt"
+ cd frp_0.39.0_linux_amd64 && rm -rf frpc.ini && wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/luodi/frpc.ini"
  nohup ./frpc -c ./frpc.ini >> /dev/null 2>&1 &
  elif [ "$bNum" = "2" ];then
 echo -e "
@@ -40,10 +40,10 @@ echo -e "
  "
  read -p "请输入括号里的代号:" mplsdh
  cd
- wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/zhongzhuan/server.crt"
- wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/zhongzhuan/server.key"
- wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/zhongzhuan/ca.crt"
- cd frp_0.39.0_linux_amd64 && rm -rf frps.ini &&  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/${mplsdh}/zhongzhuan/frps.ini"
+ wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/server.crt"
+ wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/server.key"
+ wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/ca.crt"
+ cd frp_0.39.0_linux_amd64 && rm -rf frps.ini &&  wget -N --no-check-certificate "https://github.91chi.fun//https://raw.githubusercontent.com/js522707900/mpls/main/${mplsdh}/zhongzhuan/frps.ini"
  nohup ./frps -c ./frps.ini >> /dev/null 2>&1 &
  fi
  elif [ "$aNum" = "2" ];then
