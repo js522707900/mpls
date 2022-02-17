@@ -25,7 +25,8 @@ echo -e "
  read -p "输入选项:" bNum
 if [ "$bNum" = "1" ];then
 echo -e "
- ${GREEN} 1.广港1(gzhkmpls1) 
+ ${GREEN} 1.广港1(gzhkmpls1)
+ ${GREEN} 2.苏日1(jsjpmpls1)
  "
  read -p "请输入括号里的代号:" mplsdh
  cd
@@ -36,7 +37,8 @@ echo -e "
  systemctl restart frpc
  elif [ "$bNum" = "2" ];then
 echo -e "
- ${GREEN} 1.广港1(gzhkmpls1) 
+ ${GREEN} 1.广港1(gzhkmpls1)
+ ${GREEN} 2.苏日1(jsjpmpls1)
  "
  read -p "请输入括号里的代号:" mplsdh
  cd
